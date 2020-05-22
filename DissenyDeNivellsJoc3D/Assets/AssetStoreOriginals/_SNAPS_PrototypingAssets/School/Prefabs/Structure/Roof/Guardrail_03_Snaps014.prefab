@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 4065252318827765530}
   - component: {fileID: 1669538508195453816}
   - component: {fileID: 6595190713747767591}
+  - component: {fileID: 5923455343163069586}
+  - component: {fileID: 1188801211130618206}
   m_Layer: 0
   m_Name: Guardrail_03_Snaps014
   m_TagString: Untagged
@@ -55,6 +57,7 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -66,6 +69,7 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
@@ -87,8 +91,34 @@ MeshCollider:
   m_GameObject: {fileID: 8855861200044249679}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 3
+  m_Enabled: 0
+  serializedVersion: 4
   m_Convex: 1
-  m_CookingOptions: 14
+  m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: d3c95a3aca04f8842ad8363399567ed0, type: 2}
+--- !u!65 &5923455343163069586
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8855861200044249679}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.27, y: 0.9658728, z: 1.9999987}
+  m_Center: {x: 0.1, y: 0.4828271, z: -1.0000347}
+--- !u!65 &1188801211130618206
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8855861200044249679}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.0953405, y: 0.9658728, z: 0.19}
+  m_Center: {x: 1.0476669, y: 0.4828271, z: -0.1}
