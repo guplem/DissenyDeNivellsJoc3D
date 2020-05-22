@@ -4,12 +4,18 @@
     using UnityEngine.InputSystem.Controls;
 #endif
 
+using System;
 using UnityEngine;
 
 namespace UnityTemplateProjects
 {
     public class SimpleCameraController : MonoBehaviour
     {
+        private void Start()
+        {
+            Debug.Log("CONTROLS: Use WASD to move and RMB to rotate the camera.");
+        }
+
         class CameraState
         {
             public float yaw;
