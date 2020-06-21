@@ -20,7 +20,6 @@ public class CameraDetector : MonoBehaviour
                 // Nothing in between
                 Debug.Log($"Player seen by {transform.parent.parent.gameObject.name}!", gameObject);
                 Debug.DrawLine(cameraPosition.position, controller.transform.position+heightCheck, Color.yellow, 10);
-                Debug.Break();
                 controller.enabled = false;
                 controller.transform.SetProperties(GameManager.Instance.transform);
                 controller.enabled = true;
