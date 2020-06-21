@@ -9,6 +9,9 @@ public class CameraDetector : MonoBehaviour
     private Vector3 heightCheck = Vector3.up * 0.1f;
     private void OnTriggerStay(Collider other)
     {
+        if(GameManager.Instance.hasCameraControl)
+            return;
+        
         CharacterController controller = other.gameObject.GetComponent<CharacterController>();
         if (controller != null)
         {

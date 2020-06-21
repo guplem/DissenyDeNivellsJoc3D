@@ -41,7 +41,7 @@ public class GameManager : MonoBehaviour
         set
         {
             if (value)
-                fan.Play(0);
+                barrier.Play(0);
             _hasBarrierControl = value;
         }
     }
